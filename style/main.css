@@ -1,0 +1,74 @@
+/* Główny arkusz stylów, który definiuje podstawowe elementy, takiej jak BODY, HTML, Czcionki, etc */
+/* Zawiera również schemat kolorów witryny */
+@import url('navbar.css');
+/* SCHEMAT KOLORÓW */
+:root {
+    --kolor-przewodni: #c4dad2; /* Jasny beżowy */
+    --kolor-przewodni-polprzezroczysty: rgba(196, 218, 210, 0.5); /* Półprzezroczysty jasny beżowy */
+    --kolor-drugoplanowy: #e9efec; /* Biały */
+    --kolor-drugoplanowy-polprzezroczysty: rgba(233, 239, 236, 0.5); /* Półprzezroczysty biały */
+    --kolor-tekstu-jasny: #e9efec; /* Biały */
+    --kolor-tekstu-ciemny: #16423c; /* Ciemny granatowy */
+    --kolor-akcentu: #6a9c89; /* Zielonkawo-niebieski */
+    --kolor-cieni: rgba(22, 66, 60, 0.2); /* Cienie z ciemnego granatowego */
+    --mieszanie: lighten;
+}
+
+
+
+
+/* Definicja stylów BODY & HTML */
+body, html {
+    background-color: var(--kolor-drugoplanowy); /* Tło główne */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-optical-sizing: auto;
+    min-width: 400px; /* Minimalna szerokość strony */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding-top: 100px; /* Dopasuj wartość do wysokości navbaru */
+    box-sizing: border-box;
+
+}
+@media (max-width: 768px) {
+    body {
+        padding-top: 80px; /* Dopasuj do mniejszej wysokości na urządzeniach mobilnych */
+    }
+}
+
+/* animation class and keyframes */
+.overflow-hidden {
+    overflow: hidden;
+   }
+   
+   .drop-in {
+    animation: drop-in 1s ease 1ms backwards;
+   }   
+   .drop-in-2 {
+    animation: drop-in 1s ease 200ms backwards;
+   }
+   .drop-in-3 {
+    animation: drop-in 1s ease 300ms backwards;
+   }
+   .drop-in-4 {
+    animation: drop-in 1s ease 400ms backwards;
+   }
+   .drop-in-5 {
+    animation: drop-in 1s ease 500ms backwards;
+   }
+   .drop-in-6 {
+    animation: drop-in 1s ease 600ms backwards;
+   }
+   
+   @keyframes drop-in {
+    from {
+     opacity: 0;
+     transform: translateY(-100px);
+    }
+    to {
+     opacity: 1;
+     transform: translate(0px);
+    }
+   }
