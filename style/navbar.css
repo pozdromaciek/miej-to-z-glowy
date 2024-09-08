@@ -63,7 +63,7 @@
     display: none;
     font-size: 1.5em;
     cursor: pointer;
-    color: var(--kolor-akcentu);
+    color: var(--kolor-tekstu-ciemny);
 }
 
 .navbar-active {
