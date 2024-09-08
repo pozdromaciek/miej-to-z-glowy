@@ -118,7 +118,10 @@
 .with_image {
     background-image: url('../img/lices-bg.png');
     background-color: var(--kolor-drugoplanowy-polprzezroczysty);
-    background-blend-mode: var(--mieszanie)
+    background-blend-mode: var(--mieszanie);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .fact-myth-container {
@@ -226,5 +229,13 @@
 @media (max-width: 1000px) {
     .accordion-container {
         padding: 1vh 0;
+    }
+    .fact-myth-container {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .box {
+        width: 250px;
     }
 }
