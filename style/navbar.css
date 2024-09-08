@@ -71,6 +71,7 @@
     font-weight: 700 !important;
     text-decoration: overline var(--kolor-akcentu) !important;
     transition: 0.3 ease !important;
+    
 }
 .navbar-active:hover {
     color: var(--kolor-akcentu) !important; /* Kolor tekstu linków navbaru */ 
@@ -91,6 +92,7 @@
         left: 0;
         background-color: var(--kolor-drugoplanowy);
         opacity: 0.99;
+        box-shadow: 0 2px 4px var(--kolor-cieni); /* Opcjonalny cień dla efektu głębi */
     }
     .navbar-menu a {
         color: var(--kolor-tekstu-ciemny)
