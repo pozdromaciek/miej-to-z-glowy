@@ -63,7 +63,7 @@
     display: none;
     font-size: 1.5em;
     cursor: pointer;
-    color: var(--kolor-tekstu-ciemny);
+    color: var(--kolor-tekstu-jasny);
 }
 
 .navbar-active {
@@ -91,6 +91,9 @@
         left: 0;
         background-color: var(--kolor-drugoplanowy);
         opacity: 0.99;
+    }
+    .navbar-menu a {
+        color: var(--kolor-tekstu-ciemny)
     }
 
     .navbar-menu.active {
