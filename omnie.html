@@ -28,7 +28,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400..700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <!-- Biblioteka ikon -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     
@@ -37,7 +38,7 @@
 <body>
 <!-- Pasek nawigacji #START -->
 <nav class="navbar"> 
-    <div class="navbar-brand">Miej problem z głowy!</div>
+    <div class="navbar-brand"><i class="fas fa-bug"></i> Miej problem z głowy!</div>
     <div class="navbar-toggle" id="navbar-toggle">
         &#9776;
     </div>
@@ -52,27 +53,49 @@
 
 <!-- Pasek nawigacji #KONIEC -->
 
-<div class="container about">
-    <h1 class="drop-in"><i class="fas fa-user"></i> O MNIE</h1>
-    <p class="drop-in">Nazywam się Katarzyna Dubiel i jestem polonistką z wieloletnim doświadczeniem w edukacji. Moja praca opiera się na nieustannym kontakcie z dziećmi i młodzieżą, co stanowi dla mnie źródło ogromnej satysfakcji.</p>
-
-    <p class="drop-in">Przez ostatnie dwa lata miałam okazję współpracować z dyrekcją wielu śląskich żłobków, przedszkoli i szkół, zajmując się realizacją ich budżetów w ramach projektów edukacyjnych. W tym czasie udało mi się nawiązać solidne relacje z dyrektorami i nauczycielami, oferując im wsparcie zarówno w sferze zawodowej, jak i osobistej. Moje zaangażowanie i profesjonalizm sprawiły, że zyskałam ich zaufanie oraz sympatię.</p>
+<div class="container about with_image">
+    <div class="accordion-container">
+        <div class="accordion-box drop-in">
+            <div class="accordion-header">
+                <span><h2><i class="fas fa-user"></i> O MNIE</h2></span>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <p>Nazywam się Katarzyna Dubiel i jestem polonistką z wieloletnim doświadczeniem w edukacji. Moja praca opiera się na nieustannym kontakcie z dziećmi i młodzieżą, co stanowi dla mnie źródło ogromnej satysfakcji.</p>
     
-    <br> <br>
-    <h1 class="drop-in-2"><i class="fas fa-bug"></i> DLACZEGO WSZAWICA?</h1>
-    <p class="drop-in-2">Codzienne kontakty z dyrektorami placówek oświatowych oraz bezpośrednie doświadczenia z uczniami skłoniły mnie do podjęcia dodatkowej działalności w walce z powszechnym problemem, jakim jest wszawica. Moje pierwsze zetknięcie z tym pasożytem miało miejsce w dzieciństwie, kiedy to wszawica była tematem tabu. Wówczas pojawiały się pytania: <strong>Skąd się to bierze?</strong> <strong>Czy jest zaraźliwe?</strong> <strong>Od kogo można się zarazić?</strong> <strong>Jakie są objawy?</strong> <strong>Czy konieczne jest obcinanie włosów lub golenie na łyso?</strong></p>
-
-    <p class="drop-in-2">Te pytania wciąż wracają, zwłaszcza odkąd sama zostałam matką. Moja córka ma siedem lat i temat ten regularnie powraca w naszym domu. Proces usuwania wszy jest czasochłonny i uciążliwy. Spędzanie godzin w łazience z dzieckiem, które niecierpliwie pyta „czy to już koniec?” oraz frustracja związana z utratą czasu na płukanie włosów w różnych preparatach, to codzienność, która może przytłaczać.</p>
-
-    <p class="drop-in-2">Nie tylko moje dziecko, ale i cała rodzina musi zmierzyć się z tym problemem, który potrafi skutecznie pokrzyżować plany, wprowadzić w frustrację i wywołać poczucie wstydu. Zrozumienie i efektywne rozwiązanie problemu wszawicy jest kluczowe, aby uniknąć niepotrzebnych stresów i komplikacji.</p>
-    <br> <br>
-    <h1 class="drop-in-3"><i class="fas fa-certificate"></i> KWALIFIKACJE</h1>
-    <p class="drop-in-3">Posiadam tytuł magistra filologii polskiej o specjalności nauczycielskiej, który uzyskałam z wyróżnieniem na Uniwersytecie Śląskim w Katowicach. Moja pasja do edukacji skłoniła mnie do ciągłego rozwijania swoich umiejętności, aby jak najlepiej służyć uczniom. W ramach inwestycji w rozwój zawodowy ukończyłam również studia podyplomowe z zakresu Bezpieczeństwa i Higieny Pracy (BHP) w Wyższej Szkole Zarządzania Ochroną Pracy w Katowicach, zdobywając tytuł specjalisty BHP. Wiedza z zakresu BHP jest dla mnie niezwykle ważna, dlatego stosuję ją zarówno w mojej pracy zawodowej, jak i w codziennym życiu, dbając o bezpieczeństwo mojej rodziny oraz bliskich.</p>
-
-    <p class="drop-in-3">Moje zaangażowanie w profilaktykę zdrowotną oraz higienę przejawia się w uczestnictwie w licznych kursach i szkoleniach. Ukończyłam m.in. kurs „Wszawica, świerzbowiec i pluskwy”, który znacznie poszerzył moją wiedzę na temat pasożytniczych chorób u dzieci i dorosłych. Dodatkowo, szkolenie „Dezynfekcja i sterylizacja” nauczyło mnie efektywnego zarządzania odpadami medycznymi oraz prawidłowego stosowania preparatów dezynfekcyjnych. Dzięki zdobytym umiejętnościom w zakresie segregacji, mycia i dezynfekcji wyrobów medycznych, mogę skutecznie i profesjonalnie zarządzać każdym aspektem higieny.</p>
+                <p>Przez ostatnie dwa lata miałam okazję współpracować z dyrekcją wielu śląskich żłobków, przedszkoli i szkół, zajmując się realizacją ich budżetów w ramach projektów edukacyjnych. W tym czasie udało mi się nawiązać solidne relacje z dyrektorami i nauczycielami, oferując im wsparcie zarówno w sferze zawodowej, jak i osobistej. Moje zaangażowanie i profesjonalizm sprawiły, że zyskałam ich zaufanie oraz sympatię.
+                </p>
+            </div>
+        </div>
     
-    <p class="drop-in-3">Stale doskonalę swoje umiejętności poprzez uczestnictwo w kursach i szkoleniach dotyczących infekcji pasożytniczych. Moje doświadczenie zawodowe, w połączeniu z osobistą perspektywą matki siedmioletniego dziecka, motywuje mnie do ciągłego poszerzania wiedzy w tej dziedzinie. Moim celem jest zapewnienie najwyższych standardów bezpieczeństwa i zdrowia, zarówno w pracy z dziećmi i młodzieżą, jak i w życiu codziennym.</p>
+        <div class="accordion-box drop-in-2">
+            <div class="accordion-header">
+                <span><h2><i class="fa-solid fa-bugs"></i> DLACZEGO WSZAWICA?</h2></span>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <p>Codzienne kontakty z dyrektorami placówek oświatowych oraz bezpośrednie doświadczenia z uczniami skłoniły mnie do podjęcia dodatkowej działalności w walce z powszechnym problemem, jakim jest wszawica. Moje pierwsze zetknięcie z tym pasożytem miało miejsce w dzieciństwie, kiedy to wszawica była tematem tabu. Wówczas pojawiały się pytania: <strong>Skąd się to bierze?</strong> <strong>Czy jest zaraźliwe?</strong> <strong>Od kogo można się zarazić?</strong> <strong>Jakie są objawy?</strong> <strong>Czy konieczne jest obcinanie włosów lub golenie na łyso?</strong></p>
     
+                <p>Te pytania wciąż wracają, zwłaszcza odkąd sama zostałam matką. Moja córka ma siedem lat i temat ten regularnie powraca w naszym domu. Proces usuwania wszy jest czasochłonny i uciążliwy. Spędzanie godzin w łazience z dzieckiem, które niecierpliwie pyta „czy to już koniec?” oraz frustracja związana z utratą czasu na płukanie włosów w różnych preparatach, to codzienność, która może przytłaczać.</p>
+    
+                <p>Nie tylko moje dziecko, ale i cała rodzina musi zmierzyć się z tym problemem, który potrafi skutecznie pokrzyżować plany, wprowadzić w frustrację i wywołać poczucie wstydu. Zrozumienie i efektywne rozwiązanie problemu wszawicy jest kluczowe, aby uniknąć niepotrzebnych stresów i komplikacji.</p>
+            </div>
+        </div>
+    
+        <div class="accordion-box drop-in-3">
+            <div class="accordion-header">
+                <span><h2><i class="fas fa-certificate"></i> KWALIFIKACJE</h2></span>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <p>Posiadam tytuł magistra filologii polskiej o specjalności nauczycielskiej, który uzyskałam z wyróżnieniem na Uniwersytecie Śląskim w Katowicach. Moja pasja do edukacji skłoniła mnie do ciągłego rozwijania swoich umiejętności, aby jak najlepiej służyć uczniom. W ramach inwestycji w rozwój zawodowy ukończyłam również studia podyplomowe z zakresu Bezpieczeństwa i Higieny Pracy (BHP) w Wyższej Szkole Zarządzania Ochroną Pracy w Katowicach, zdobywając tytuł specjalisty BHP. Wiedza z zakresu BHP jest dla mnie niezwykle ważna, dlatego stosuję ją zarówno w mojej pracy zawodowej, jak i w codziennym życiu, dbając o bezpieczeństwo mojej rodziny oraz bliskich.</p>
+    
+                <p>Moje zaangażowanie w profilaktykę zdrowotną oraz higienę przejawia się w uczestnictwie w licznych kursach i szkoleniach. Ukończyłam m.in. kurs „Wszawica, świerzbowiec i pluskwy”, który znacznie poszerzył moją wiedzę na temat pasożytniczych chorób u dzieci i dorosłych. Dodatkowo, szkolenie „Dezynfekcja i sterylizacja” nauczyło mnie efektywnego zarządzania odpadami medycznymi oraz prawidłowego stosowania preparatów dezynfekcyjnych. Dzięki zdobytym umiejętnościom w zakresie segregacji, mycia i dezynfekcji wyrobów medycznych, mogę skutecznie i profesjonalnie zarządzać każdym aspektem higieny.</p>
+        
+                <p>Stale doskonalę swoje umiejętności poprzez uczestnictwo w kursach i szkoleniach dotyczących infekcji pasożytniczych. Moje doświadczenie zawodowe, w połączeniu z osobistą perspektywą matki siedmioletniego dziecka, motywuje mnie do ciągłego poszerzania wiedzy w tej dziedzinie. Moim celem jest zapewnienie najwyższych standardów bezpieczeństwa i zdrowia, zarówno w pracy z dziećmi i młodzieżą, jak i w życiu codziennym.</p>
+            </div>
+        </div>
+    </div>
     
 </div>
 

@@ -18,6 +18,26 @@
     font-weight: 900;
 }
 
+.parallax {
+    background-color: var(--kolor-drugoplanowy-polprzezroczysty);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main_top {
+    background-image: url("../img/lices-bg.png");
+}
+
 .less-padding {
     padding: 0vh 3vw !important;
 }
@@ -30,6 +50,7 @@
     margin: 20px 0;
     padding: 5vh 8vw;
 }
+
 
 
 
@@ -82,7 +103,7 @@
 .image-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 30px;
     margin-bottom: 10px;
     justify-content: center;    
 }
@@ -92,15 +113,95 @@
     max-width: 400px;
     max-height: 400px;
     object-fit: cover;
-    border-radius: 5px;
-    box-shadow: 0 0 5px var(--kolor-akcentu);
+}
+
+.with_image {
+    background-image: url('../img/lices-bg.png');
+    background-color: var(--kolor-drugoplanowy-polprzezroczysty);
+    background-blend-mode: var(--mieszanie)
+}
+
+.fact-myth-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.box {
+    width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    color: var(--kolor-tekstu-jasny);
+    margin: 0 10px;
+    text-align: center;
+}
+
+.myth {
+    background-color: rgba(255, 107, 107, 0.9); /* Czerwone pastelowe tło dla mitu */
+}
+
+.fact {
+    background-color: rgba(46, 204, 113, 0.9); /* Zielone tło dla faktu */
+}
+
+.box i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.box h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.lice-cycle-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.cycle-stage {
+    text-align: center;
+    background-color: var(--kolor-przewodni); /* Pastelowy szary */
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    min-height: 200px;
+    margin: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cycle-stage i {
+    font-size: 50px;
+    color: var(--kolor-akcentu); /* Głęboki granat */
+}
+
+.cycle-stage h4 {
+    margin: 10px 0;
+    color: var(--kolor-tekstu-jasny);
+}
+
+.cycle-stage p {
+    color: var(--kolor-tekstu-jasny);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.cycle-stage p strong {
+    color: var(--kolor-tekstu-jasny);
 }
 
 
 
 .footer {
     background-color: var(--kolor-przewodni); /* Użyj zmiennej lub dowolnego koloru tła */
-    color: var(--kolor-tekstu-ciemny); /* Kolor tekstu */
+    color: var(--kolor-tekstu-jasny); /* Kolor tekstu */
     text-align: center; /* Wyśrodkowanie treści */
     padding: 20px 0;
     position: relative;

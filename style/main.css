@@ -3,23 +3,26 @@
 @import url('navbar.css');
 /* SCHEMAT KOLORÓW */
 :root {
-    --kolor-przewodni: #c4dad2; /* Jasny beżowy */
-    --kolor-przewodni-polprzezroczysty: rgba(196, 218, 210, 0.5); /* Półprzezroczysty jasny beżowy */
-    --kolor-drugoplanowy: #e9efec; /* Biały */
-    --kolor-drugoplanowy-polprzezroczysty: rgba(233, 239, 236, 0.5); /* Półprzezroczysty biały */
-    --kolor-tekstu-jasny: #e9efec; /* Biały */
-    --kolor-tekstu-ciemny: #16423c; /* Ciemny granatowy */
-    --kolor-akcentu: #6a9c89; /* Zielonkawo-niebieski */
-    --kolor-cieni: rgba(22, 66, 60, 0.2); /* Cienie z ciemnego granatowego */
+    --kolor-przewodni: #3AAFA9; 
+    --kolor-przewodni-polprzezroczysty:rgba(58, 175, 169, 0.5); 
+    --kolor-drugoplanowy: rgb(222, 242, 241); 
+    --kolor-drugoplanowy-polprzezroczysty: rgba(222, 242, 241,0.9); 
+    --kolor-tekstu-jasny: #FEFFFF; 
+    --kolor-tekstu-ciemny: #6D6875; 
+    --kolor-akcentu: #2B7A78; 
+    --kolor-cieni: rgba(23, 37, 42, 0.5); 
     --mieszanie: lighten;
 }
 
 
 
 
+
+
+
 /* Definicja stylów BODY & HTML */
 body, html {
-    background-color: var(--kolor-drugoplanowy); /* Tło główne */
+    background-color: var(--kolor-tla); /* Tło główne */
     padding: 0;
     margin: 0;
     width: 100%;
@@ -42,7 +45,9 @@ body, html {
 .overflow-hidden {
     overflow: hidden;
    }
-   
+   .fade-in {
+    animation: fade-in 3s ease 0ms forwards;
+   }  
    .drop-in {
     animation: drop-in 1s ease 1ms backwards;
    }   
@@ -72,3 +77,33 @@ body, html {
      transform: translate(0px);
     }
    }
+   @keyframes fade-in {
+    from {
+     opacity: 0;
+    }
+    to {
+     opacity: 1;
+    }
+   }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--kolor-przewodni) var(--kolor-drugoplanowy);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--kolor-przewodni);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--kolor-drugoplanowy);
+    border-radius: 0px;
+    border: 1px ridge var(--kolor-przewodni);
+  }

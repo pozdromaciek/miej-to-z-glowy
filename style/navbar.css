@@ -4,8 +4,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--kolor-przewodni-polprzezroczysty); /* Półprzezroczyste tło */
-    color: var(--kolor-tekstu-jasny); /* Kolor tekstu navbaru */
+    background-color: var(--kolor-przewodni); /* Półprzezroczyste tło */
+    color: var(--kolor-akcentu); /* Kolor tekstu navbaru */
     padding: 40px 80px;
     z-index: 9999; /* Wysoki z-index, aby navbar był na wierzchu */
     display: flex;
@@ -31,7 +31,7 @@
     font-weight: 800;
     cursor: pointer;
     transition: 0.3s;
-    color: var(--kolor-tekstu-ciemny);
+    color: var(--kolor-tekstu-jasny);
 }
 .navbar-brand:hover {
     font-weight: 700;
@@ -49,13 +49,13 @@
 }
 
 .navbar-menu a {
-    color: var(--kolor-tekstu-ciemny); /* Kolor tekstu linków navbaru */
+    color: var(--kolor-tekstu-jasny); /* Kolor tekstu linków navbaru */
     text-decoration: none;
     font-weight: 400;
-    transition: 0.3s linear;
+    transition: 0.4s linear;
 }
 .navbar a:hover {
-    font-weight: 600;
+    font-weight: 800;
     color: var(--kolor-akcentu)
 }
 
@@ -67,9 +67,9 @@
 }
 
 .navbar-active {
-    color: var(--kolor-tekstu-ciemny) !important; 
+    color: var(--kolor-akcentu) !important; 
     font-weight: 700 !important;
-    text-decoration: overline var(--kolor-tekstu-ciemny) !important;
+    text-decoration: overline var(--kolor-akcentu) !important;
     transition: 0.3 ease !important;
 }
 .navbar-active:hover {

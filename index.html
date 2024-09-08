@@ -1,4 +1,4 @@
-<html lang="pl">
+<html lang="pl" style="padding-top: 0 !important;">
     <head>
         <!-- Metadane -->
         <meta charset="UTF-8">
@@ -20,7 +20,6 @@
         <!-- Skrypty JavaScript -->
         <script src="script/navbar.js"></script>
         <script src="script/boxes.js"></script>
-        <script src="script/top_padding.js"></script>
         <!-- Google Font - Roboto Slab -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,14 +32,14 @@
     
     
     </head>
-<body>
+<body style="padding-top: 0 !important;" class="fade-in">
 <!-- Pasek nawigacji #START -->
-<nav class="navbar"> 
-    <div class="navbar-brand">Miej problem z głowy!</div>
+<nav class="navbar fade-in"> 
+    <div class="navbar-brand fade-in"><i class="fas fa-bug"></i> Miej problem z głowy!</div>
     <div class="navbar-toggle" id="navbar-toggle">
         &#9776;
     </div>
-    <ul class="navbar-menu" id="navbar-menu">
+    <ul class="navbar-menu fade-in" id="navbar-menu">
         <a href="./index.html" class="navbar-active" ><li>Strona Główna</li></a>
         <a href="./omnie.html"><li>O mnie</li></a>
         <li><a href="./edukacja.html">Edukacja</a></li>
@@ -49,6 +48,8 @@
     </ul>
 </nav>
 <!-- Pasek nawigacji #KONIEC -->
+
+<div class="parallax main_top"></div>
 <div class="container"></div>
 <footer class="footer">
     <div class="footer-content">
