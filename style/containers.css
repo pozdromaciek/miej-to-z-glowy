@@ -1,17 +1,17 @@
 .container {
     width: 100%;
-    padding: 5vh 8vh !important;
+    padding: 5vh 8vh;
     scroll-margin-top: 60px;
     flex-direction: column;
     padding: 5vh 8vw;
     box-sizing: border-box;
     scroll-margin-top: 60px;
+    box-shadow: 0 2px 4px var(--kolor-cieni);
 }
 
 .index {
     padding: 10vh 30vh !important;
-    box-shadow: 0 2px 4px var(--kolor-cieni);
-    z-index: 1;
+
 }
 .container a {
     color: var(--kolor-akcentu); /* Kolor linków */
@@ -53,8 +53,13 @@
     background-image: url("../img/lices-bg.png");
 }
 .p1 {
-    background-image: url("../img/lices-bg.png");
+    background-image: url("../img/lices-bg1.png");
     min-height: 50vh;
+}
+.p2 {
+    background-image: url("../img/lices-bg2.png");
+    min-height: 40vh;
+    background-position: top;
 }
 
 .less-padding {
@@ -250,13 +255,13 @@
 
 .scroll-arrow {
     position: absolute;
-    bottom: 20px; /* Odległość od dołu diva */
+    bottom: 8vh; /* Odległość od dołu diva */
     left: 50%;
     transform: translateX(-50%);
     font-size: 5rem; /* Wielkość strzałki */
     color: var(--kolor-przewodni); /* Kolor strzałki, jeśli masz taką zmienną */
     cursor: pointer;
-    animation: pulse 1.5s infinite; /* Animacja pulsowania */
+    animation: pulse 3s infinite; /* Animacja pulsowania */
 }
 
 /* Definicja animacji pulsowania */
@@ -265,7 +270,7 @@
         transform: translateX(-50%) translateY(0);
     }
     50% {
-        transform: translateX(-50%) translateY(10px); /* Pulsowanie w dół */
+        transform: translateX(-50%) translateY(4vh); /* Pulsowanie w dół */
     }
 }
 
@@ -286,6 +291,6 @@
     }
 
     .index {
-        padding: 10vh 8vh !important;
+        padding: 5vh 4vh !important;
     }
 }
