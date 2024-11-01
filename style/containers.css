@@ -1,16 +1,31 @@
 .container {
     width: 100%;
-    padding: 5vh 8vh;
+    padding: 5vh 8vh !important;
     scroll-margin-top: 60px;
     flex-direction: column;
     padding: 5vh 8vw;
     box-sizing: border-box;
     scroll-margin-top: 60px;
-    min-height: 100vh
+}
+
+.index {
+    padding: 10vh 30vh !important;
+    box-shadow: 0 2px 4px var(--kolor-cieni);
+    z-index: 1;
+}
+.container a {
+    color: var(--kolor-akcentu); /* Kolor linków */
+    transition: 0.2s ease-out ;
+    font-weight: 600;
+}
+
+.container a:hover {
+    font-weight: 400;
 }
 
 .container h1, h2, h3{
     color: var(--kolor-akcentu)
+
 }
 
 .container h1.big{
@@ -36,6 +51,10 @@
 
 .main_top {
     background-image: url("../img/lices-bg.png");
+}
+.p1 {
+    background-image: url("../img/lices-bg.png");
+    min-height: 50vh;
 }
 
 .less-padding {
@@ -228,6 +247,28 @@
     text-decoration: underline;
 }
 
+
+.scroll-arrow {
+    position: absolute;
+    bottom: 20px; /* Odległość od dołu diva */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5rem; /* Wielkość strzałki */
+    color: var(--kolor-przewodni); /* Kolor strzałki, jeśli masz taką zmienną */
+    cursor: pointer;
+    animation: pulse 1.5s infinite; /* Animacja pulsowania */
+}
+
+/* Definicja animacji pulsowania */
+@keyframes pulse {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(10px); /* Pulsowanie w dół */
+    }
+}
+
 @media (max-width: 1000px) {
     .accordion-container {
         padding: 0.5vh 0;
@@ -242,5 +283,9 @@
     .box {
         width: 200px;
         margin-bottom: 2px;
+    }
+
+    .index {
+        padding: 10vh 8vh !important;
     }
 }
