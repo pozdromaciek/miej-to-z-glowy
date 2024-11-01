@@ -291,6 +291,9 @@
     }
 
     .index {
-        padding: 5vh 4vh !important;
+        padding: 2vh 2vh !important;
+    }
+    .container {
+        padding: 2vh 2vh !important;
     }
 }
